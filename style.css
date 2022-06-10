@@ -30,3 +30,24 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 /*不要更動上面是取消預設值*/
+
+.nav{
+    background-color: #FCD3A9;
+    height: 103px;
+    width: 100vw;
+    
+
+
+}
+
+.brand-logo img{
+    height: 53px;
+
+}
+
+.nav ul{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+}
