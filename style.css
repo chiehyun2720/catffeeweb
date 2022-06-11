@@ -31,23 +31,29 @@ footer, header, hgroup, menu, nav, section {
 }
 /*不要更動上面是取消預設值*/
 
-.nav{
+.menu{
     background-color: #FCD3A9;
-    height: 103px;
+    position: fixed;
     width: 100vw;
-    
-
-
 }
-
-.brand-logo img{
-    height: 53px;
-
+.brand-logo{
+    width: 60px;
+    padding: 20px 80px;
+    text-decoration: none;
+    position: absolute;
 }
-
-.nav ul{
-    display: inline-block;
-    text-align: center;
+.menu ul{
+    display:inline-block;
     width: 100%;
+    text-align: center;
     padding: 0;
+    margin: 20px 0;
+}
+.menu li{
+    display: inline-block;
+    margin: 0 20px;
+}
+.menu ul li a{
+    color: #6C8DE4;
+    text-decoration: none;
 }
