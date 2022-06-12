@@ -35,6 +35,7 @@ footer, header, hgroup, menu, nav, section {
     background-color: #FCD3A9;
     position: fixed;
     width: 100vw;
+    padding: 15px，133px;
 }
 .brand-logo{
     width: 60px;
