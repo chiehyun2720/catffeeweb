@@ -58,3 +58,6 @@ footer, header, hgroup, menu, nav, section {
     color: #6C8DE4;
     text-decoration: none;
 }
+.carousel-indicators .active{
+    background-color: #6C8DE4;
+}
