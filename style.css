@@ -70,6 +70,7 @@ img{
 }
 .carousel-item{
     top: 60px;
+    padding-top: 10px;
 }
 .carousel-indicators .active{
     background-color: #6C8DE4;
