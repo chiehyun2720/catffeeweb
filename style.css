@@ -82,17 +82,16 @@ img{
 
 /*catffee功能*/
 
-.container{
-    margin: 69px 0 0 0px
-}
 
-.container p{
+.subtitle{
     
     text-align: center;
     color: rgba(108, 141, 228, 1);
-    font-size: 36px
-    border-bottom: 13px solid #FCD3A9;
+    font-size: 36px  
 }
 
+h2 {
+    border-bottom: 13px solid #FCD3A9;
+  }
 
 
