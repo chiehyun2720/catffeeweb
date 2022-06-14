@@ -101,7 +101,31 @@ img{
 
 /*團隊介紹*/
 
+.name{
+    margin: 78px 392px;
+}
 
+.name img{
+
+}
+
+.name h3{
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.name ul{
+    display:inline-block;
+    width: 100%;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.name li{
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 18px;
+}
 
 
 
@@ -111,8 +135,10 @@ img{
 
 /*多個共用*/
 .subtitle{
+
     color: #6C8DE4;
-    text-align: center; 
+    text-align: center;
+    font-weight: 600; 
     font-size: 32px;
 	line-height: 45px;
 	border-bottom:  8px solid #FCD3A9;
