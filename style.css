@@ -35,24 +35,34 @@ footer, header, hgroup, menu, nav, section {
     background-color: #FCD3A9;
     position: fixed;
     width: 100vw;
-    padding: 15px，133px;
+    /*padding: 15px，133px;*/
+    height: 100px;
 }
+
 .brand-logo{
-    width: 60px;
-    padding: 20px 80px;
-    text-decoration: none;
     position: absolute;
+    margin-left: 196px;
+
+
 }
+
+img{
+    width:138px;
+    margin: 26.7px 0;
+}
+
 .menu ul{
     display:inline-block;
     width: 100%;
     text-align: center;
     padding: 0;
-    margin: 20px 0;
+    margin: 25px 0;
 }
 .menu li{
     display: inline-block;
     margin: 0 20px;
+    font-size: 33px;
+    font-weight:bold;
 }
 .menu ul li a{
     color: #6C8DE4;
