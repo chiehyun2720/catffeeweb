@@ -31,12 +31,13 @@ footer, header, hgroup, menu, nav, section {
 }
 /*不要更動上面是取消預設值*/
 
+/*導覽列*/
 .menu{
     background-color: #FCD3A9;
     position: fixed;
     width: 100vw;
     /*padding: 15px，133px;*/
-    height: 100px;
+    height: 76px;
 }
 
 .brand-logo{
@@ -47,8 +48,8 @@ footer, header, hgroup, menu, nav, section {
 }
 
 img{
-    width:138px;
-    margin: 26.7px 0;
+    width:120px;
+    margin: 17.5px 0;
 }
 
 .menu ul{
@@ -56,22 +57,46 @@ img{
     width: 100%;
     text-align: center;
     padding: 0;
-    margin: 25px 0;
+    margin: 20px 0;
 }
 .menu li{
     display: inline-block;
     margin: 0 20px;
-    font-size: 33px;
+    font-size: 24px;
     font-weight:bold;
 }
 .menu ul li a{
     color: #6C8DE4;
     text-decoration: none;
 }
+
+/*倫波*/
+
 .carousel-item{
-    top: 60px;
-    padding-top: 10px;
+    top: 58px;
 }
+
 .carousel-indicators .active{
     background-color: #6C8DE4;
 }
+
+/*catffee功能*/
+
+.container{
+    margin: 69px 0 0 0px
+}
+
+.container p{
+    
+    text-align: center;
+    color: rgba(108, 141, 228, 1);
+    font-size: 36px
+}
+
+.container hr{
+    width: 385px;
+    height: 13px;
+    align-items: center;
+}
+
+
