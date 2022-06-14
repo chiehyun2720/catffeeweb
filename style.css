@@ -82,6 +82,9 @@ img{
 
 /*catffee功能*/
 
+.container{
+    text-align: center;
+}
 
 .subtitle{
     
@@ -91,7 +94,8 @@ img{
 }
 
 h2 {
-    border-bottom: 13px solid #FCD3A9;
+    border-bottom: 8px solid #FCD3A9;
+    width: 1102px;
   }
 
 
