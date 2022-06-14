@@ -91,12 +91,8 @@ img{
     text-align: center;
     color: rgba(108, 141, 228, 1);
     font-size: 36px
+    border-bottom: 13px solid #FCD3A9;
 }
 
-.container hr{
-    width: 385px;
-    height: 13px;
-    align-items: center;
-}
 
 
