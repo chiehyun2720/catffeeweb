@@ -31,6 +31,9 @@ footer, header, hgroup, menu, nav, section {
 }
 /*不要更動上面是取消預設值*/
 
+
+
+
 /*導覽列*/
 .menu{
     background-color: #FCD3A9;
@@ -82,10 +85,7 @@ img{
 
 /*catffee功能*/
 
-.container01{
-    margin-top: 100px;   
-    margin-bottom: 112px; 
-}
+
 
 
 /*吉祥物介紹*/
@@ -102,13 +102,9 @@ img{
 /*團隊介紹*/
 
 .name{
-    margin: auto 28%;
+    margin: 10% 35%;
     display: flex;
     align-items: center;
-}
-
-.name img{
-
 }
 
 .name h3{
@@ -116,12 +112,39 @@ img{
 }
 .name ul{
     margin: 0%;
+    padding-left: 99px;
     }
 
 .name ul li{
-    
     list-style: none;
+}
 
+/*footer*/
+
+.colorfooter{
+    background-color: #FCD3A9;
+    height: 544px;
+}
+
+.containerfooter{
+	color: #6C8DE4;
+	font-size: 24px;
+    font-weight: 600;
+	line-height: 36px;
+	text-align: center;
+    padding-top: 5%;
+    font: weight 600px;
+
+}
+
+.img{
+	margin-top:32px;
+    width: 4%;
+}
+
+.containerfooter li{
+	margin-bottom:16px;
+    list-style: none;
 }
 
 
@@ -130,10 +153,15 @@ img{
 
 
 
+/*跨區域多個共用*/
+
+.container01{
+    margin-top: 100px;   
+    margin-bottom: 112px; 
+}
 
 
 
-/*多個共用*/
 .subtitle{
 
     color: #6C8DE4;
