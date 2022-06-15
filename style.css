@@ -82,7 +82,7 @@ img{
 
 /*catffee功能*/
 
-.container{
+.container01{
     margin-top: 100px;   
     margin-bottom: 112px; 
 }
@@ -102,22 +102,26 @@ img{
 /*團隊介紹*/
 
 .name{
-
+    margin: auto 28%;
+    display: flex;
+    align-items: center;
 }
 
 .name img{
-    margin: 50px;
+
 }
 
 .name h3{
-
+    font-weight: 600;
 }
 .name ul{
-    display:inline-block;
+    margin: 0%;
     }
 
 .name ul li{
-    display:inline-block;
+    
+    list-style: none;
+
 }
 
 
