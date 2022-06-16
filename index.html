@@ -1,40 +1,31 @@
 <!DOCTYPE html>
-<html lang="zh-tw繁體中文">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CatffeeWEB</title>
-    <style>
-
-    </style>
-    <linK href="./style.css" rel="stylesheet"><!--連結css-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"><!-- 連接Bootstrap -->
-
-
-</head><!--製做說明:照片只要放對到img資料夾再用figma上傳就不會調檔,
-        div是方便讓大家有一個框架能在裡面打這樣才不會亂-->
-
-
+    <html lang="zh-tw繁體中文">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>CatffeeWEB</title>
+            <style>
+        
+            </style>
+            <linK href="./style.css" rel="stylesheet"><!--連結css-->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"><!-- 連接Bootstrap -->
+        
+        
+        </head>
 <body>
-    <div class="menu"><!--nav製作-->
-        <a href="#" class="brand-logo">
-          <img src="./img/catffee_logo.png">
-        </a>
-        <ul class="nav">
-            <li>
-                <a href="#">首頁</a>
-            </li>
-            <li>
-                <a href="#">功能</a>
-            </li>
-            <li>
-                <a href="#">吉祥物</a>
-            </li>
-            <li>
-                <a href="#">團隊</a>
-            </li>
-        </ul>
+    <div id="nav-wrap">
+        <div id="scroller-anchor"></div> 
+            <div class="menu" id="nav"><!--nav製作-->
+                <a href="#" class="brand-logo"><img src="./img/catffee_logo.png"></a>
+                <ul class="clearfix">
+                    <li class="nav-btn " ><a href="#">首頁</a></li>
+                    <li class="nav-btn" data-row-id="row1">功能</li>
+                    <li class="nav-btn" data-row-id="row2">吉祥物</li>
+                    <li class="nav-btn" data-row-id="row3">團隊</li>
+                    <div id="nav-indicator"></div>
+                </ul>
+            </div>
     </div>
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true"><!--輪播-->
         <div class="carousel-indicators">
@@ -65,71 +56,81 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-      </div>
-
-    <div class="container01"><!--catffee功能-->
-      <h2 class="subtitle">Caffee功能</h2>
-        <div class="catffeeintro"><!--catffee內容-->
-
-        </div>
-    </div>
-    <div class="container01"><!--吉祥物介紹-->
-      <h2 class="subtitle">吉祥物介紹</h2>
-      <cdiv class="catffeerole">
-
-      </cdiv>
     </div>
 
-    <div class="container01"><!--團隊介紹-->
-      <h2 class="subtitle">團隊介紹</h2>
-        <div class="name">
-          <img src="./img/intro_Teng.png" alt="photo intro">
-          <ul>
-            <li>
-              <h3>鄧潔筠</h3>
-              在catffee學院中負責細緻修改以及深探如何製作出好的catffee map讓台灣的貓奴們有個好使用的APP並能造福全台灣。
-            </li>
-          </ul>
+    <div id="content-wrap">     
+        <div class="container01 " data-height="100" id="row1"><!--catffee功能-->
+            <div class="row-btn"><div class="circle"></div></div>
+            <h2 class="subtitle">Caffee功能</h2>
+                <div class="catffeeintro"><!--catffee內容-->
+
+                </div>
         </div>
-        <div class="name">
-          <img src="./img/intro_go.png" alt="photo intro">
-          <ul>
-            <li>
-              <h3>勾彧萱</h3><!--要換照片和字-->
-              在catffee學院中負責細緻修改以及深探如何製作出好的catffee map讓台灣的貓奴們有個好使用的APP並能造福全台灣。
-            </li>
+
+        <div class="container01" data-height="200" id="row2"><!--吉祥物介紹-->
+            <div class="row-btn"><div class="circle"></div></div>
+            <h2 class="subtitle">吉祥物介紹</h2>
+                <cdiv class="catffeerole">
+
+                </div>
         </div>
-        <div class="name">
-          <img src="./img/intro_Teng.png" alt="photo intro">
-          <ul>
-            <li>
-              <h3>蕭嘉恩</h3><!--要換照片和字-->
-              在catffee學院中負責細緻修改以及深探如何製作出好的catffee map讓台灣的貓奴們有個好使用的APP並能造福全台灣。
-            </li>
+
+        <div class="container01" data-height="280" id="row3"><!--團隊介紹-->
+            <div class="row-btn"><div class="circle"></div></div>
+            <h2 class="subtitle">團隊介紹</h2>
+                <div class="name">
+                    <img src="./img/intro_Teng.png" alt="photo intro">
+                    <ul>
+                        <li>
+                        <h3>鄧潔筠</h3>
+                        在catffee學院中負責細緻修改以及深探如何製作出好的catffee map讓台灣的貓奴們有個好使用的APP並能造福全台灣。
+                        </li>
+                    </ul>
+                </div>
         </div>
-    </div>
-    <footer class="colorfooter">
-      <div class="containerfooter">
-        <h2 class="subTitle" >CATFFEE</h2>
-        <ul >
-          <li>Mail：chiehyun.tw@gmail.com
-           </li>
-          <li>Phone：0910123456
-           </li>
-          <li>© 2022 Devsisters Corp. All Rights Reserved.
-            </li>
-          <li>
-            <img class="img" src="img/facebook.png" alt="相片">
-            <img class="img" src="img/instagram-alt.png" alt="相片">
-            <img class="img" src="./img/line.png" alt="相片">
-           </li>
-        </ul>
-      
-      </div>
-    </footer>
-  </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script><!-- JavaScript Bundle with Popper -->
+
+        <div class="name container01" data-height="400" id="row4">
+            <div class="row-btn"><div class="circle"></div></div>
+            <img src="./img/intro_go.png" alt="photo intro">
+            <ul>
+                <li>
+                <h3>勾彧萱</h3><!--要換照片和字-->
+                在catffee學院中負責細緻修改以及深探如何製作出好的catffee map讓台灣的貓奴們有個好使用的APP並能造福全台灣。
+                </li>
+            </div>
+            <div class="name">
+            <img src="./img/intro_Teng.png" alt="photo intro">
+            <ul>
+                <li>
+                <h3>蕭嘉恩</h3><!--要換照片和字-->
+                在catffee學院中負責細緻修改以及深探如何製作出好的catffee map讓台灣的貓奴們有個好使用的APP並能造福全台灣。
+                </li>
+            </div>
+        </div>
+
+        <footer class="colorfooter">
+            <div class="containerfooter">
+                <h2 class="subTitle" >CATFFEE</h2>
+                <ul >
+                    <li>Mail：chiehyun.tw@gmail.com
+                    </li>
+                    <li>Phone：0910123456
+                    </li>
+                    <li>© 2022 Devsisters Corp. All Rights Reserved.
+                        </li>
+                    <li>
+                        <img class="img" src="img/facebook.png" alt="相片">
+                        <img class="img" src="img/instagram-alt.png" alt="相片">
+                        <img class="img" src="./img/line.png" alt="相片">
+                    </li>
+                </ul>
+            
+            </div>
+        </footer>
+
+     </div>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="js/navrow.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script><!-- JavaScript Bundle with Popper -->
 </body>
-
-
 </html>

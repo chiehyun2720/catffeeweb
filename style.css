@@ -35,12 +35,17 @@ footer, header, hgroup, menu, nav, section {
 
 
 /*導覽列*/
+
 .menu{
     background-color: #FCD3A9;
     position: fixed;
     width: 100vw;
-    /*padding: 15px，133px;*/
     height: 76px;
+    top:0;
+	left:0;
+	width:100%;
+	z-index:100;
+    box-shadow: -1px 4px 7px 3px rgb(173 163 163);
 }
 
 .brand-logo{
@@ -55,22 +60,56 @@ img{
     margin: 17.5px 0;
 }
 
-.menu ul{
-    display:inline-block;
-    width: 100%;
-    text-align: center;
-    padding: 0;
-    margin: 20px 0;
+.clearfix {
+    display: inline-block;
+    margin-left: 50%;
 }
+
+.clearfix a{
+     color: inherit;
+     text-decoration:none
+}
+
 .menu li{
     display: inline-block;
-    margin: 0 20px;
+    margin: 0;
     font-size: 24px;
     font-weight:bold;
 }
-.menu ul li a{
-    color: #6C8DE4;
-    text-decoration: none;
+
+#nav ul{
+    position:relative;}
+
+#nav-indicator{
+	position:absolute;
+    margin-left: 50px;
+	width:89px;
+	top:55px;
+	left:0;
+	height:5px;
+	background:#6C8DE4;	
+	
+	-webkit-transition: all 0.2s ease;
+	-moz-transition:    all 0.2s ease;
+	-o-transition:      all 0.2s ease;
+	-ms-transition:     all 0.2s ease;
+	transition:         all 0.2s ease;
+}
+
+.nav-btn{
+    width: 126px;
+    float: left;
+    padding: 20px 0;
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #5170c3;
+}
+
+.nav-btn:hover, .nav-btn.active {
+    color: #747c93;
+    background: #e7c6a5;
 }
 
 /*倫波*/
@@ -175,4 +214,11 @@ img{
 	padding-top: 24px;
   }
 
-
+  /*ANIMATION*/
+.row-btn, .circle, .row{
+	-webkit-transition: all 0.1s ease;
+	-moz-transition:    all 0.1s ease;
+	-o-transition:      all 0.1s ease;
+	-ms-transition:     all 0.1s ease;
+	transition:         all 0.1s ease;	
+}
