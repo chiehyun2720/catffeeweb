@@ -162,7 +162,7 @@ img{
 
 .colorfooter{
     background-color: #FCD3A9;
-    height:398px;
+    height:340px;
 }
 
 .containerfooter{
@@ -181,7 +181,7 @@ img{
 }
 
 .containerfooter li{
-	margin-bottom:16px;
+	margin-bottom:-12px;
     list-style: none;
 }
 
