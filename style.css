@@ -119,7 +119,11 @@ img{
 }
 
 .carousel-indicators .active{
-    background-color: #6C8DE4;
+    /*background-color: #6C8DE4*/
+}
+
+.carousel-control-prev-icon{
+    
 }
 
 /*catffee功能*/
@@ -129,6 +133,16 @@ img{
 
 /*吉祥物介紹*/
 
+/*indicator*/
+.carousel-indicators02 [data-bs-target] {
+    display: block;
+  }
+  .carousel-indicators02 {
+    display: block;
+  }
+  .carousel-indicators .active {
+    transform: scale(1.5);
+  }
 
 
 
