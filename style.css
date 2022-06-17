@@ -40,7 +40,7 @@ footer, header, hgroup, menu, nav, section {
     background-color: #FCD3A9;
     position: fixed;
     width: 100vw;
-    height: 76px;
+    height: 67px;
     top:0;
 	left:0;
 	width:100%;
@@ -56,8 +56,8 @@ footer, header, hgroup, menu, nav, section {
 }
 
 img{
-    width:120px;
-    margin: 17.5px 0;
+    width: 119px;
+    margin: 11.5px 0;
 }
 
 .clearfix {
@@ -73,7 +73,7 @@ img{
 .menu li{
     display: inline-block;
     margin: 0;
-    font-size: 24px;
+    font-size: 18px;
     font-weight:bold;
 }
 
