@@ -162,17 +162,16 @@ img{
 
 .colorfooter{
     background-color: #FCD3A9;
-    height: 544px;
+    height: 300px;
 }
 
 .containerfooter{
 	color: #6C8DE4;
-	font-size: 24px;
-    font-weight: 600;
+	font-size: 12px;
+    font-weight:300;
 	line-height: 36px;
 	text-align: center;
     padding-top: 5%;
-    font: weight 600px;
 
 }
 
