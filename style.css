@@ -178,15 +178,65 @@ img{
 /*indicator*/
 .carousel-indicators02 [data-bs-target] {
     display: block;
-  }
-  .carousel-indicators02 {
+}
+
+.carousel-indicators02 {
     display: block;
-  }
-  .carousel-indicators .active {
+}
+
+.carousel-indicators .active {
     transform: scale(1.5);
-  }
+}
+
+.carousel-indicators02{
+    position: absolute;
+}
 
 
+.carousel-inner{
+  position: relative;
+}
+
+.carousel-item img{
+    width : auto;
+    width : 200px;
+}
+
+.button01{
+    width: 119px;
+    height: 119px;
+    background-image: url("./img/northcat01.png");
+    border-radius:50%;
+    background-color: white;
+    border: 2px solid #FCD3A9;
+}
+
+.button02{
+    width: 119px;
+    height: 119px;
+    background-image: url("./img/centralcat02.png");
+    border-radius:50%;
+    background-color: white;
+    border: 2px solid #FCD3A9;
+}
+
+.button03{
+    width: 119px;
+    height: 119px;
+    background-image: url("./img/southcat03.png");
+    border-radius:50%;
+    background-color: white;
+    border: 2px solid #FCD3A9;
+}
+
+.button04{
+    width: 119px;
+    height: 119px;
+    background-image: url("./img/westcat04.png");
+    border-radius:50%;
+    background-color: white;
+    border: 2px solid #FCD3A9;
+}
 
 
 
@@ -205,6 +255,7 @@ img{
 .name h3{
     font-weight: 600;
 }
+
 .name ul{
     margin: 0%;
     padding-left: 99px;
@@ -267,7 +318,7 @@ img{
 	margin: 0 auto;
 	width: 525px;
 	padding-top: 24px;
-  }
+}
 
   /*ANIMATION*/
 .row-btn, .circle, .row{
