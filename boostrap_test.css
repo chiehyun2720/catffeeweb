@@ -1,15 +1,36 @@
 .test{
     display: inline-block;
+    width: 80%;
+    margin-left: 26%;
+    margin-top: 20%;
+    padding: 0;
 }
 .tab-content img{
     width: 200px;
 }
 .tab-content{
-    position: relative;
-}
-.test ul{
     position: absolute;
 }
-.nav_nav-pills_mb-3 li{
+.nav_nav-pills_mb-3{
+    position: relative;
     display: inline-block;
+}
+.nav-item{
+    display: inline-block;
+    color: #6C8DE4;
+}
+.nav-link{
+    background-color: #FFE3C1;
+    border: none;
+    padding: 5px 15px;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+.nav-link :active{
+    background-color: #6C8DE4;
+    color: #ffffff;
+    border: none;
+    padding: 5px 15px;
+    margin: 0 10px;
+    border-radius: 10px;
 }
