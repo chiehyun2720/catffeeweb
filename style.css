@@ -199,7 +199,7 @@ img{
 
 .carousel-item img{
     width : auto;
-    width : 200px;
+    width : 500px;
 }
 
 .button01{
@@ -238,9 +238,20 @@ img{
     border: 2px solid #FCD3A9;
 }
 
+.carousel-caption{
+    color: rgb(28, 25, 25);
+    position: unset;
+}
 
+.carousel-box{
+    display: flex;
+    align-items: center;
+}
 
-
+.inner-box{
+    left: 150px;
+    height: 400px;
+} 
 
 
 
