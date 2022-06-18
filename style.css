@@ -133,6 +133,43 @@ img{
 .catffeeintro h3{
     font-weight: 700;
 }
+.home{
+    display: inline-block;
+    width: 80%;
+    margin-left: 26%;
+    margin-top: 10%;
+}
+.home ul{
+    display: inline-block;
+    position: absolute;
+    width: 30%;
+    margin-top: 3%;
+    margin-left: 3%;
+}
+.home img{
+    width: 200px;
+    position: relative;
+}
+
+.map{
+    display: inline-block;
+    width: 80%;
+    margin-left: 26%;
+    margin-top: 10%;
+    padding: 0;
+}
+.map ul{
+    display: inline-block;
+    position: relative;
+    width: 38%;
+    margin-top: 5%;
+    padding: 0;
+}
+.map img{
+    width: 200px;
+    position: absolute;
+    margin-left: 3%;
+}
 
 
 
