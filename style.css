@@ -127,7 +127,12 @@ img{
 }
 
 /*catffee功能*/
-
+.catffeeintro{
+    display: block;
+}
+.catffeeintro h3{
+    font-weight: 700;
+}
 
 
 
