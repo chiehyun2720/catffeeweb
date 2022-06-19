@@ -36,22 +36,7 @@
 		$(this).siblings().removeClass("active");
 		
 		var i = $(this).index();
-
-		switch (i) {
-			case 0:
-				$('#nav-indicator').css('left', '-31px');	
-				break;
-			case 1:
-				$('#nav-indicator').css('left', '93px');	
-				break;	
-			case 2:
-				$('#nav-indicator').css('left', '220px');	
-				break;
-			case 3:
-				$('#nav-indicator').css('left', '346px');	
-				break;
-		}
-
+		$('#nav-indicator').css('left', i*100 + 'px');			
 		
 		var name = $(this).attr("data-row-id");
 		var id = "#" + name;

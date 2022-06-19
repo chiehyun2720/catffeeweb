@@ -32,7 +32,9 @@ footer, header, hgroup, menu, nav, section {
 /*不要更動上面是取消預設值*/
 
 
-
+#carouselExampleIndicators{
+    margin-top: 67px;
+}
 
 /*導覽列*/
 
@@ -47,45 +49,52 @@ footer, header, hgroup, menu, nav, section {
 	z-index:100;
     box-shadow: -1px 4px 7px 3px rgb(173 163 163);
 }
-
+.menu:after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+}
 .brand-logo{
+    text-decoration: none;
     position: absolute;
-    margin-left: 196px;
-
-
+    top: 10px;
+    left: 20px;
 }
 
 img{
     width: 119px;
     margin: 11.5px 0;
 }
-
-.clearfix {
-    display: inline-block;
-    margin-left: 50%;
+.brand-logo img{
+    margin: 0;
+}
+.nav-wrapper{
+    height: 67px;
+    width: 100%;
+    text-align: center;
 }
 
-.clearfix a{
-     color: inherit;
+.nav-wrapper a{
      text-decoration:none
 }
 
-.menu li{
+.nav-wrapper li{
     display: inline-block;
     margin: 0;
     font-size: 18px;
     font-weight:bold;
+    margin-top: 21px;
+    padding: 0 30px;
 }
 
-#nav ul{
-    position:relative;}
 
 #nav-indicator{
 	position:absolute;
     margin-left: 50px;
 	width:89px;
 	top:55px;
-	left:-31px;
+	left:0;
 	height:5px;
 	background:#6C8DE4;	
 	
@@ -95,27 +104,30 @@ img{
 	-ms-transition:     all 0.2s ease;
 	transition:         all 0.2s ease;
 }
-
-.nav-btn{
-    width: 126px;
-    float: left;
-    padding: 21.5px 0;
-    list-style: none;
-    text-align: center;
-    cursor: pointer;
-    text-transform: uppercase;
+/*不是寫在nav-btn,是nav-btn a*/
+.nav-btn a{
     color: #5170c3;
 }
-
+.nav-btn a:hover{
+    background-color: transparent;
+    color: #fff;
+}
+/*這邊跟你們的figma不太一樣，所以先註解掉*/
 .nav-btn:hover, .nav-btn.active {
-    color: #747c93;
-    background: #e7c6a5;
+    /* color: #747c93;
+    background: #e7c6a5; */
+}
+
+
+#function:target,#pet:target,#team:target{
+    padding-top: 67px; 
+    margin-top: -67px;
 }
 
 /*倫波*/
 
-.carousel-item{
-    top: 58px;
+#carouselExampleIndicators img{
+   margin: 0; 
 }
 
 .carousel-indicators .active{
@@ -132,43 +144,43 @@ img{
 }
 .catffeeintro h3{
     font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 20px;
 }
-.home{
+/*home跟,map上下內距80px*/
+.home,.map{
+    /* 
+    依照你們的ui是不需要寫display:inline-block=>意思是指首頁一整塊變成並排顯示
     display: inline-block;
     width: 80%;
-    margin-left: 26%;
-    margin-top: 10%;
-}
-.home ul{
-    display: inline-block;
-    position: absolute;
-    width: 30%;
-    margin-top: 3%;
-    margin-left: 3%;
-}
-.home img{
-    width: 200px;
-    position: relative;
-}
-
-.map{
-    display: inline-block;
+    margin-left: 26%;*/
+    padding: 80px 0; 
     width: 80%;
-    margin-left: 26%;
-    margin-top: 10%;
-    padding: 0;
+    margin: auto;
 }
-.map ul{
+/*home ul,map ul相同樣式所以寫在一起（中檢加個逗點就可以）*/
+.home ul,.map ul{
     display: inline-block;
-    position: relative;
+    /* position: relative;是使用display:inline-block變成並排 */
     width: 38%;
-    margin-top: 5%;
     padding: 0;
+    vertical-align: middle;
 }
-.map img{
-    width: 200px;
-    position: absolute;
-    margin-left: 3%;
+/*home ul,map ul裡面的文字顏色為淺灰色）*/
+.home ul p,
+.map ul p{
+    color:#757575;
+}
+.map-img{
+    display: inline-block;
+    width: 60%;
+    vertical-align: middle;
+    text-align: center;
+}
+.map-img img{
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
 }
 
 
@@ -176,104 +188,129 @@ img{
 /*吉祥物介紹*/
 
 /*indicator*/
-.carousel-indicators02 [data-bs-target] {
+#carouselExampleCaptions{
+    display: flex;
+    min-height: 400px;
+    width: 80%;
+    margin: auto;
+}
+#carouselExampleCaptions .carousel-indicators [data-bs-target] {
     display: block;
 }
 
-.carousel-indicators02 {
+#carouselExampleCaptions .carousel-indicators {
     display: block;
 }
 
-.carousel-indicators .active {
+#carouselExampleCaptions .carousel-indicators .active {
     transform: scale(1.5);
+    /*變大的時候0.5秒漸出*/
+    transition: ease 0.5s;
+    box-shadow: 0 0 5px rgba(137, 137, 137, 0.3);
 }
 
-.carousel-indicators02{
+#carouselExampleCaptions .carousel-indicators{
     position: absolute;
+    top: 50px;
+    left: 0;
+    margin: 0;
+    padding: 0;
 }
 
-
-.carousel-inner{
-  position: relative;
+#carouselExampleCaptions .carousel-item img{
+    width : 100%;
+    max-width: 500px;
 }
-
-.carousel-item img{
-    width : auto;
-    width : 500px;
-}
-
-.button01{
-    width: 119px;
-    height: 119px;
-    background-image: url("./img/northcat01.png");
-    border-radius:50%;
+/*輪播的按鈕大小同樣樣式寫在一起,只要修改就可以一起改變*/
+#carouselExampleCaptions button{
+    /*現在的default狀態有點大,先調小一點*/
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
     background-color: white;
     border: 2px solid #FCD3A9;
+    /*設定背景大小等比例滿版以及背景不重複*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
 }
-
+.button01{    
+    background-image: url("./img/northcat01.png"); 
+}
 .button02{
-    width: 119px;
-    height: 119px;
     background-image: url("./img/centralcat02.png");
-    border-radius:50%;
-    background-color: white;
-    border: 2px solid #FCD3A9;
 }
-
 .button03{
-    width: 119px;
-    height: 119px;
     background-image: url("./img/southcat03.png");
-    border-radius:50%;
-    background-color: white;
-    border: 2px solid #FCD3A9;
 }
 
 .button04{
-    width: 119px;
-    height: 119px;
     background-image: url("./img/westcat04.png");
-    border-radius:50%;
-    background-color: white;
-    border: 2px solid #FCD3A9;
 }
-
+.carousel-caption h5{
+    color: #212121;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
 .carousel-caption{
-    color: rgb(28, 25, 25);
+    color: #757575;
     position: unset;
+    text-align: left;
 }
 
-.carousel-box{
+#carouselExampleCaptions .carousel-box{
     display: flex;
     align-items: center;
 }
 
-.inner-box{
-    left: 150px;
-    height: 400px;
+#carouselExampleCaptions .inner-box{
+    /*top,left,right,bottom只有在position:absolute或fixed的時候才使用*/
+    /* left: 150px;
+    height: 400px; */
+    width:70%;
+    margin: auto 0 auto auto;
+    vertical-align: middle;
 } 
-
 
 
 /*團隊介紹*/
 
 .name{
-    margin: 10% 35%;
-    display: flex;
-    align-items: center;
+    /* 套bootstrap container就可以自動左右縮放,不用再定義margin,避免跑版margin: 10% 35%; */
+    text-align: justify;
+    width: 85%;
+    margin: auto;
+    padding: 15px 0;
 }
-
+.name:last-child{
+    padding-bottom: 0;
+}
+.name::after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
 .name h3{
     font-weight: 600;
+    font-size: 22px;
+    color: #212121;
+    margin-bottom: 10px;
 }
 
 .name ul{
     margin: 0%;
-    padding-left: 99px;
-    }
-
+    width: calc(100% - 200px);
+    display: inline-block;
+    vertical-align: middle;
+}
+.name img{
+    display: inline-block;
+    vertical-align: middle;
+}
 .name ul li{
     list-style: none;
+    color: #757575;
 }
 
 /*footer*/
@@ -319,14 +356,13 @@ img{
 
 
 .subtitle{
-
     color: #6C8DE4;
     text-align: center;
     font-weight: 600; 
     font-size: 32px;
 	line-height: 45px;
 	border-bottom:  8px solid #FCD3A9;
-	margin: 0 auto;
+	margin: 0 auto 50px;
 	width: 525px;
 	padding-top: 24px;
 }

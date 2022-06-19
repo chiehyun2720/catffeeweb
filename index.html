@@ -5,11 +5,8 @@
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>CatffeeWEB</title>
-            <style type="text/css">
-
-
-            </style>
-
+            <!--favicon-->
+            <link href="./img/northcat_150px_01.png" rel="icon">
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"><!-- 連接Bootstrap -->
             <linK href="./style.css" rel="stylesheet"><!--連結css-->
         
@@ -19,53 +16,58 @@
         <div id="scroller-anchor"></div> 
             <div class="menu" id="nav"><!--nav製作-->
                 <a href="#" class="brand-logo"><img src="./img/catffee_logo.png"></a>
-                <ul class="clearfix">
-                    <li class="nav-btn " ><a href="#">首頁</a></li>
-                    <li class="nav-btn" data-row-id="row1">功能</li>
-                    <li class="nav-btn" data-row-id="row2">吉祥物</li>
-                    <li class="nav-btn" data-row-id="row3">團隊</li>
-                    <div id="nav-indicator"></div>
+                <!--class="clearfix"是用在清除浮動元素,這裡因為nav的位置是fixed所以不適用,可以參考bootstrap的文件有詳細說明-->
+                <ul class="nav-wrapper">
+                    <li class="nav-btn"><a href="#">首頁</a></li>
+                    <li class="nav-btn" ><a href="#function">功能</a></li>
+                    <!-- 要做點擊滾動是寫在a的href<li class="nav-btn" data-row-id="row2">吉祥物</li> -->
+                    <li class="nav-btn"><a href="#pet">吉祥物</a></li>
+                    <li class="nav-btn"><a href="#team">團隊</a></li>
                 </ul>
             </div>
     </div>
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true"><!--輪播-->
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3"></button>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true"><!--輪播-->
+               <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3"></button>
+            </div>
+                <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./img/car_01.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/car_02.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/car_03.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/car_04.png" class="d-block w-100" alt="...">
+                      </div>
+                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                </button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./img/car_01.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./img/car_02.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./img/car_03.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./img/car_04.png" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-    </div>
 
-    <div id="content-wrap">     
-        <div class="container01 " data-height="100" id="row1"><!--catffee功能-->
+    <div class="container">     
+      <!--catffee功能-->
+        <div class="container01" >
+          <div id="function"></div>
             <div class="row-btn"><div class="circle"></div></div>
             <h2 class="subtitle">Caffee功能</h2>
                 <div class="catffeeintro"><!--catffee內容-->
                   <div class="home">
-                    <img src="./img/iPhone 8 - 1-1-1.jpg">
+                    <div class="map-img">
+                      <img src="./img/iPhone 8 - 1-1-1.jpg">
+                    </div>                    
                     <ul>
                         <h3>首頁</h3>
                         <p>各地最熱門的貓咪咖啡廳一覽而盡，將貓主子加入摯愛帶你進咖啡廳的世界。</p>
@@ -76,32 +78,28 @@
                         <h3>貓咖地圖</h3>
                         <p>涵蓋北、中、南、東四大區的貓咪咖啡廳搜尋頁，以四隻厭世貓咪組合成台灣地圖，不同角度的厭世貓咪讓台灣地圖添增一風味。</p>
                     </ul>
-                    <img src="./img/iPhone 8 - 2-1.png">
+                    <div class="map-img">
+                      <img src="./img/iPhone 8 - 2-1.png">
+                    </div>                    
                 </div>
                 </div>
         </div>
-
-        <div class="container01" data-height="200" id="row2"><!--吉祥物介紹-->
+      <!--吉祥物介紹-->
+        <div class="container01" >
+          <div id="pet"></div>
           <div class="row-btn"><div class="circle"></div></div>
           <h2 class="subtitle">吉祥物介紹</h2>
               <div class="catffeerole">
                 <!--with caption-->
-                    <div class="container">
                       <div
                         id="carouselExampleCaptions"
                         class="carousel slide"
                         data-bs-ride="false"
                       >
-                        <div class="carousel-indicators02">
-                          <button 
-                            class="button01"
-                            type="button"
-                            data-bs-target="#carouselExampleCaptions"
-                            data-bs-slide-to="0"
-                            class="active"
-                            aria-current="true"
-                            aria-label="Slide 1"
-                            >
+                      <!--carousel-indicators這個class名稱不能更動,是bootstrap定義的樣式-->
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="button01 active" aria-current="true"
+                            aria-label="Slide 1">
                           </button>
                           <button class="button02"
                             type="button"
@@ -208,11 +206,14 @@
 
                        
                       </div>
-                    </div>
                   </div>
               </div>
-      </div>
-        <div class="container01" data-height="280" id="row3"><!--團隊介紹-->
+    </div>
+    <!--團隊介紹-->
+    <div>
+    <div class="container01" >
+      <div id="team"></div>
+      <div class="container">
             <div class="row-btn"><div class="circle"></div></div>
               <h2 class="subtitle">團隊介紹</h2>
                   <div class="name">
@@ -241,9 +242,10 @@
                               在catffee學院中負責細緻修改以及深探如何製作出好的catffee map讓台灣的貓奴們有個好使用的APP並能造福全台灣。
                           </li>
                       </ul>
-                    </div>
-          </div>
-
+                  </div>
+      </div>
+    </div>
+</div>
         <footer class="colorfooter">
             <div class="containerfooter">
                 <h2 class="subTitle" >CATFFEE</h2>
