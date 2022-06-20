@@ -148,7 +148,11 @@ img{
     margin-bottom: 20px;
 }
 /*home跟,map上下內距80px*/
-.home,.map{
+.home,
+.map,
+.storelist,
+.store,
+.filter{
     /* 
     依照你們的ui是不需要寫display:inline-block=>意思是指首頁一整塊變成並排顯示
     display: inline-block;
@@ -159,7 +163,11 @@ img{
     margin: auto;
 }
 /*home ul,map ul相同樣式所以寫在一起（中檢加個逗點就可以）*/
-.home ul,.map ul{
+.home ul,
+.map ul,
+.storelist ul,
+.store ul,
+.filter ul{
     display: inline-block;
     /* position: relative;是使用display:inline-block變成並排 */
     width: 38%;
@@ -168,7 +176,10 @@ img{
 }
 /*home ul,map ul裡面的文字顏色為淺灰色）*/
 .home ul p,
-.map ul p{
+.map ul p,
+.storelist p,
+.store p,
+.filter p{
     color:#757575;
 }
 .map-img{
