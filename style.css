@@ -47,7 +47,7 @@ footer, header, hgroup, menu, nav, section {
 	left:0;
 	width:100%;
 	z-index:100;
-    box-shadow: -1px 4px 7px 3px rgb(173 163 163);
+    box-shadow: -1px 4px 7px 3px rgb(173 163 163/40%);
 }
 .menu:after{
     content: '';
@@ -375,7 +375,7 @@ img{
 	line-height: 45px;
 	border-bottom:  8px solid #FCD3A9;
 	margin: 0 auto 50px;
-	width: 525px;
+	width: 200px;
 	padding-top: 24px;
 }
 
