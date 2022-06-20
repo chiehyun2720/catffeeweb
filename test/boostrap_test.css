@@ -1,36 +1,53 @@
 .test{
-    display: inline-block;
+    display: block;
+    padding: 80px 0; 
     width: 80%;
-    margin-left: 26%;
-    margin-top: 20%;
-    padding: 0;
-}
-.tab-content img{
-    width: 200px;
-}
-.tab-content{
-    position: absolute;
+    margin: auto;
 }
 .nav_nav-pills_mb-3{
-    position: relative;
     display: inline-block;
+    vertical-align: middle;
+    width: 38%;
+    padding: 0;
 }
+
+.nav_nav-pills_mb-3 h3{    
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.nav_nav-pills_mb-3 p{
+    color:#757575;
+}
+
+.tab-content{
+    display: inline-block;
+    vertical-align: middle;
+    width: 60%;
+    text-align: center;
+}
+.tab-content img{
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+}
+
 .nav-item{
     display: inline-block;
-    color: #6C8DE4;
 }
 .nav-link{
+    color: #6C8DE4;
     background-color: #FFE3C1;
     border: none;
     padding: 5px 15px;
-    margin: 0 10px;
+    margin-right: 20px;
     border-radius: 10px;
 }
-.nav-link :active{
+.nav-link .hover{
     background-color: #6C8DE4;
     color: #ffffff;
-    border: none;
-    padding: 5px 15px;
-    margin: 0 10px;
-    border-radius: 10px;
+}
+.nav-link .active{
+    background-color: #6C8DE4;
+    color: #ffffff;
 }
