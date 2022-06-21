@@ -142,57 +142,54 @@ img{
 /*catffee功能*/
 .catffeeintro{
     display: block;
-}
-.catffeeintro h3{
-    font-weight: 700;
-    font-size: 35px;
-    margin-bottom: 20px;
-}
-/*home跟,map上下內距80px*/
-.home,
-.map,
-.storelist,
-.store,
-.filter{
-    /* 
-    依照你們的ui是不需要寫display:inline-block=>意思是指首頁一整塊變成並排顯示
-    display: inline-block;
-    width: 80%;
-    margin-left: 26%;*/
     padding: 80px 0; 
     width: 80%;
     margin: auto;
 }
-/*home ul,map ul相同樣式所以寫在一起（中檢加個逗點就可以）*/
-.home ul,
-.map ul,
-.storelist ul,
-.store ul,
-.filter ul{
+.nav_nav-pills_mb-3{
     display: inline-block;
-    /* position: relative;是使用display:inline-block變成並排 */
+    vertical-align: middle;
     width: 38%;
     padding: 0;
-    vertical-align: middle;
 }
-/*home ul,map ul裡面的文字顏色為淺灰色）*/
-.home ul p,
-.map ul p,
-.storelist p,
-.store p,
-.filter p{
+
+.nav_nav-pills_mb-3 h3{    
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.nav_nav-pills_mb-3 p{
     color:#757575;
+    margin-bottom: 20px;
 }
-.map-img{
+
+.tab-content{
     display: inline-block;
-    width: 60%;
     vertical-align: middle;
+    width: 60%;
     text-align: center;
 }
-.map-img img{
+.tab-content img{
     width: 100%;
     max-width: 300px;
     margin: auto;
+}
+
+.nav-item{
+    display: inline-block;
+}
+.nav-link{
+    color: #6C8DE4;
+    background-color: #FFE3C1;
+    border: none;
+    margin-top: 10px;
+    padding: 5px 15px;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+.nav-item button.active{
+    background-color: #6C8DE4;
+    color: #ffffff;
 }
 
 
