@@ -191,6 +191,9 @@ img{
     background-color: #6C8DE4;
     color: #ffffff;
 }
+.nav-item button:hover{
+    color: #ffffff;
+}
 
 
 
