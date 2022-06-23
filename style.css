@@ -113,10 +113,10 @@ img{
     color: #fff;
 }
 /*這邊跟你們的figma不太一樣，所以先註解掉*/
-.nav-btn:hover, .nav-btn.active {
+/*.nav-btn:hover, .nav-btn.active {
     /* color: #747c93;
-    background: #e7c6a5; */
-}
+    background: #e7c6a5; }*/
+
 
 
 #function:target,#pet:target,#team:target{
@@ -135,11 +135,21 @@ img{
     background-color: #6C8DE4;
 }
 
-.carousel-control-prev-icon{
-    
-}
 
 /*catffee功能*/
+.background-img{
+    background-image: url(./img/bg02.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+
+
+
+}
+
+
+
 .catffeeintro{
     display: block;
     padding: 80px 0; 
@@ -329,29 +339,37 @@ img{
 
 .colorfooter{
     background-color: #FCD3A9;
-    height:340px;
+
 }
 
 .containerfooter{
-	color: #6C8DE4;
-	font-size: 12px;
-    font-weight:300;
-	line-height: 36px;
-	text-align: center;
-    padding-top: 5%;
-
+	color: #ffffff;
+	font-size: 14px;
+    font-weight:400;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 41px;
+    box-shadow: none;
+    box-sizing: border-box;
 }
 
+.contact{
+    padding: 30px 0;
+}
+
+
 .img{
-	margin-top:32px;
-    width: 4%;
+    width: 3%;
 }
 
 .containerfooter li{
-	margin-bottom:-12px;
     list-style: none;
 }
 
+hr{
+    border-top: 2px solid;
+    opacity: .60;
+}
 
 
 
